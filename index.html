@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FillFlow — Privacy Policy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0a0a0f;
+      --surface: #13131a;
+      --border: rgba(255,255,255,0.08);
+      --text: #f0f0f5;
+      --muted: #8888a0;
+      --accent: #7c6fff;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 16px;
+      line-height: 1.8;
+      padding: 0;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 24px 0;
+    }
+
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .logo-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-mark {
+      width: 32px;
+      height: 32px;
+      background: var(--accent);
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-text {
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: -0.3px;
+    }
+
+    main {
+      padding: 56px 0 80px;
+    }
+
+    .page-title {
+      font-size: 36px;
+      font-weight: 600;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+
+    .updated {
+      font-size: 14px;
+      color: var(--muted);
+      margin-bottom: 48px;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      margin: 40px 0 12px;
+      color: var(--text);
+    }
+
+    p {
+      color: #c0c0d0;
+      margin-bottom: 16px;
+    }
+
+    ul {
+      color: #c0c0d0;
+      padding-left: 20px;
+      margin-bottom: 16px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    .highlight-box {
+      background: rgba(124, 111, 255, 0.08);
+      border: 1px solid rgba(124, 111, 255, 0.2);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 32px 0;
+    }
+
+    .highlight-box p {
+      margin: 0;
+      color: #b0a8ff;
+      font-size: 15px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 40px 0;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 24px 0;
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="logo-row">
+      <div class="logo-mark">
+        <svg width="18" height="18" viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg">
+          <rect x="2" y="3.5" width="8" height="1.8" rx="0.9"/>
+          <rect x="2" y="7" width="12" height="1.8" rx="0.9"/>
+          <rect x="2" y="10.5" width="6" height="1.8" rx="0.9"/>
+        </svg>
+      </div>
+      <span class="logo-text">FillFlow</span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <h1 class="page-title">Privacy Policy</h1>
+    <p class="updated">Last updated: April 2026</p>
+
+    <div class="highlight-box">
+      <p>FillFlow is built with privacy as a core principle. All data you enter into FillFlow is stored locally on your device and is never transmitted to any external server.</p>
+    </div>
+
+    <h2>What data we collect</h2>
+    <p>FillFlow collects only the personal information you voluntarily provide when setting up your profile:</p>
+    <ul>
+      <li>Full name, first name, and last name</li>
+      <li>Email address</li>
+      <li>Phone number</li>
+      <li>Street address, city, state, ZIP code, and country</li>
+    </ul>
+    <p>This information is used solely to fill form fields on web pages at your direction.</p>
+
+    <h2>How we store your data</h2>
+    <p>All profile data is stored exclusively using Chrome's built-in <code>chrome.storage.local</code> API, which keeps data on your local device only. Your data:</p>
+    <ul>
+      <li>Never leaves your device</li>
+      <li>Is never sent to any server, database, or third party</li>
+      <li>Is never used for analytics, advertising, or any purpose other than form filling</li>
+      <li>Can be deleted at any time by removing the extension or clearing its storage</li>
+    </ul>
+
+    <h2>Permissions we use</h2>
+    <p>FillFlow requests the following browser permissions:</p>
+    <ul>
+      <li><strong>storage</strong> — to save your profile data locally on your device</li>
+      <li><strong>activeTab</strong> — to access the current tab so form fields can be detected and filled</li>
+      <li><strong>scripting</strong> — to run the content script that scans and fills form fields</li>
+      <li><strong>host permissions</strong> — to allow FillFlow to operate on any website you visit</li>
+    </ul>
+    <p>No permission is used beyond its stated purpose.</p>
+
+    <h2>Data sharing</h2>
+    <p>We do not sell, trade, rent, or transfer your personal information to any third party under any circumstances. FillFlow has no backend, no accounts, and no servers.</p>
+
+    <h2>Third-party services</h2>
+    <p>FillFlow does not integrate with or send data to any third-party services, analytics platforms, or advertising networks.</p>
+
+    <h2>Children's privacy</h2>
+    <p>FillFlow does not knowingly collect data from children under the age of 13. The extension does not target children and has no features directed at minors.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If this privacy policy changes in the future, the updated version will be posted at this URL with a revised "Last updated" date. Continued use of the extension after changes constitutes acceptance of the updated policy.</p>
+
+    <h2>Contact</h2>
+    <p>If you have any questions about this privacy policy or how FillFlow handles your data, please open an issue on the extension's GitHub repository or reach out via the Chrome Web Store support page.</p>
+
+    <hr class="divider" />
+
+    <p style="font-size: 14px; color: var(--muted);">This privacy policy applies to the FillFlow Chrome extension. FillFlow is an independent project and is not affiliated with Google LLC.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    © 2026 FillFlow. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>
